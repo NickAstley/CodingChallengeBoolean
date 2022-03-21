@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-image: url(background.jpg);
+  background-size: cover;
+  color: white;
+}
+
+/* Stile del box centrale */
+.container{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 100px;
+}
+
+
+/* Stile header e contenuto */
+header{
+  text-align: center;
+}
+
+header > img{
+  width: 300px;
+}
+
+header > h1{
+  color: #00dd00;
+}
+
+/* Stile nav e contenuto */
+nav{
+  background-color: #00dd00;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+nav > button{
+  font-weight: bold;
+}
+
+/* Stile contenuto delle section */
+section{
+  margin-top: 30px;
+}
+
+section > h2{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+section > p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+section p:first-of-type{
+  padding: 5px 0;
+}
+
+/* Inserimento freccia */
+section p:first-of-type::before{
+  content: '\21A6 \0020';
+}
+
+/* Creazione batteria */
+.batteriaMonopattino{
+  height: 30px;
+  border-radius: 5px;
+  background-color: blue;
+}
+
+/* Colorazione e grandezza batteria in base alla carica */
+.caricaMedia{
+  background-color: yellow;
+  width:35%;
+}
+
+.caricaAlta{
+  background-color: green;
+  width:60%;
+}
+
+.caricaBassa{
+  background-color: red;
+  width:15%;
+}
